@@ -2,7 +2,7 @@ const path = require('path')
 
 const config = {
   mode: "development",
-  entry: ['./src/client/index.js'],
+  entry: ['./src/client/index.ts'],
   output: {
     path: path.resolve(__dirname + '/dist'),
     filename: 'index_bundle.js',
@@ -21,11 +21,6 @@ const config = {
         use: 'ts-loader',
         exclude: /node_modules/
       },
-      {
-        test: /\.(jpe?g|gif|png|svg|webp|woff|ttf|wav|mp3|mp4|pdf)$/,
-        include: [path.resolve(__dirname + '/src')],
-        use: 'file-loader?name=[name].[ext]'
-      }
     ]
   },
   plugins: [],

@@ -7,7 +7,6 @@
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.3.1",
-    "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
     "ts-loader": "^5.3.3",
     "typescript": "^3.2.4",
@@ -16,7 +15,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"build:client": "webpack src/client/index.ts"
+    "build:client": "webpack src/client/index.ts"
   },
   "author": "",
   "license": "ISC"
